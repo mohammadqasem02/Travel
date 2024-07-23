@@ -1,0 +1,159 @@
+/* footer.css */
+
+/* General Footer Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Container for Footer Content */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Flex Layout for Footer Sections */
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.footer-logo,
+.footer-links,
+.footer-newsletter {
+    flex: 1;
+    min-width: 200px;
+    /* Minimum width for smaller screens */
+}
+
+/* Footer Logo Styling */
+.footer-logo h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-logo p {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #00aaff;
+    /* Change to your desired hover color */
+}
+
+/* Footer Links Styling */
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links-section {
+    flex: 1;
+}
+
+.footer-links-section h5 {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.footer-links-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links-section ul li {
+    margin-bottom: 0.5rem;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.footer-links-section ul li:hover {
+    color: #00aaff;
+    /* Change to your desired hover color */
+}
+
+/* Newsletter Section Styling */
+.footer-newsletter h5 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.footer-newsletter p {
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.newsletter-form button {
+    background-color: #00aaff;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #007bb5;
+    /* Change to your desired hover color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-links-section {
+        text-align: center;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        margin-bottom: 0.5rem;
+    }
+}

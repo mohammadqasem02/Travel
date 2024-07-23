@@ -1,0 +1,97 @@
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.card .rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card .details {
+    padding: 15px;
+}
+
+.card .details h5 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.card .details p {
+    margin: 5px 0;
+    color: gray;
+}
+
+/* Button Styles */
+button {
+    background-color: #18abc6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0f7e99;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.section p {
+    text-align: center;
+    color: gray;
+}
+
+.section .flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.section .flex-container button {
+    background-color: lightgray;
+}
+
+.section .flex-container button.active {
+    background-color: #18abc6;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 0;
+}
